@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background: linear-gradient(135deg, hsl(165 60% 95%), hsl(210 30% 96%), hsl(280 40% 96%));
+}
+
+
+h1, h2, h3 {
+  font-family: 'space-grotesk', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.parag-inicial {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #a9ebbc2a;
+    color: #4da992;
+    
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #a9ebbc83;
+    border-radius: 20px;
+    width: 300px;
+    
+}
+
+main h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+.destaque {
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(83, 237, 232, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+section {
+    padding: 60px 20px 60px 20px;
+
+ 
+}
+
+section p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #474747;
+    text-align: center;
+    width: 400px;;
+}
+
+.formulario {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #c2dbf785;
+    padding: 40px;
+    border-radius:15px;
+    box-shadow: #e6e6e69c 4px 2px 4px 2px;
+}
+
+.formulario label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.formulario input {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1a1a1a07;
+    border: 1px solid #16161610;
+}
+
+.formulario input::placeholder {
+    color: #1a1a1a50;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario button {
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(83, 237, 232, 1) 100%);
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.formulario button:hover {
+    transform: scale(1.02);
+}
+
+.txt-rodape p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #474747a4;
+    text-align: center;
+    width: 400px;
+}
+
+
+
+/* ESTILIZAÇÕES PARA OS RESULTADOS */
+
+.coracao {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.resultado {
+    font-size: 50px;
+    font-weight: 800;
+    color: #4da992;
+    font-size: 40px;
+
+}
+
+.status-peso {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4da992;
+}
+
+.msg {
+    font-size: 13px;
+    font-weight: 400;
+    color: #4da992;
+    text-align: center;
+    border: 1px solid #cccccc70;
+    background-color: #4da99217;
+    padding: 13px;
+    border-radius: 10px;
+
+}
+
+.msg {
+    display: inline-block;
+    margin: 20px 0px 20px 0px;
+}
+
+.verde { color: green; }
+.laranja { color: orange; }
+.vermelho { color: red; }
+
+
+.erro-msg{
+    font-size: 13px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+    border: 1px solid #cccccc70;
+    background-color: #ff000017;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    main h1 {
+        font-size: 40px;
+    }
+    section p {
+        width: 300px;
+    }
+    .formulario {
+        width: 300px;
+    }
+    .txt-rodape p {
+        width: 300px;
+    }
+}
+
